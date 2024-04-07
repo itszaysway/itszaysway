@@ -1,0 +1,7 @@
+browser.tabs.onCreated.addListener(() => {
+  browser.browserAction.enable();
+});
+
+browser.browserAction.onClicked.addListener(() => {
+  browser.browserAction.disable();
+});
